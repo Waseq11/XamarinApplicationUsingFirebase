@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MWapplicationXamarin.SignUp"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="Blue" Padding="25" CornerRadius="0">
+            <Label Text="Sign Up Page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Orientation="Horizontal" Padding="15">
+            <Entry x:Name="txtUsername" Placeholder="Username" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="15">
+            <Entry x:Name="txtPassword" Placeholder="Password" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" IsPassword="True"/>
+        </StackLayout>
+        <StackLayout>
+            <Button x:Name="btnCreateAccount" Text="Create Account" TextColor="White" BackgroundColor="Blue" CornerRadius="14" FontSize="18" Margin="20" Clicked="btnCreateAccount_Clicked"/>
+            <Button x:Name="btnCancel" Text="Cancel" TextColor="White" BackgroundColor="Red" CornerRadius="14" FontSize="18" Margin="20" Clicked="btnCancel_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

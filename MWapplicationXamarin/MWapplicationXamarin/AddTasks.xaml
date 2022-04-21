@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MWapplicationXamarin.AddTasks">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="15">
+            <Entry x:Name="txtTaskDescription" Text="" Placeholder="Description"/>
+            <Entry x:Name="txtTaskValue" Text="" Placeholder="Value"/>
+            <Picker x:Name="pickerStatus" HorizontalOptions="FillAndExpand" />
+            <Button x:Name="btnConfirm" Text="Confirm" BackgroundColor="DeepSkyBlue" CornerRadius="10" Clicked="btnConfirm_Clicked"/>
+            <Button x:Name="btnCancel" Text="Cancel" BackgroundColor="Red" CornerRadius="10" Clicked="btnCancel_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

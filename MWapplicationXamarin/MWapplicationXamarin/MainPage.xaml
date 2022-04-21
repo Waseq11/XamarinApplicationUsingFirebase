@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MWapplicationXamarin.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="Green" Padding="25" CornerRadius="0">
+            <Label Text="MU6 Company Management Application" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Orientation="Horizontal" Padding="15">
+            <Image Source="email.jpg" HeightRequest="30" WidthRequest="30"/>
+            <Entry x:Name="txtUsername" Placeholder="Username" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="15">
+            <Image Source="lock.jpg" HeightRequest="30" WidthRequest="30"/>
+            <Entry x:Name="txtPassword" Placeholder="Password" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" IsPassword="True"/>
+        </StackLayout>
+        <StackLayout>
+            <Button x:Name="btnLogin" Text="Login" BackgroundColor="Green" TextColor="White" FontSize="20" CornerRadius="14" Margin="20" Clicked="btnLogin_Clicked"/>
+            <Button x:Name="btnSignUp" Text="Sign Up" BackgroundColor="Blue" TextColor="White" FontSize="18" CornerRadius="14" Margin="20" Clicked="btnSignUp_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
